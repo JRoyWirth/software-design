@@ -1,9 +1,7 @@
 <h1>All Events</h1>
 
-<% @events[1]['title']%>
-
 <% for event in @events %>
     <p>
-        <a href = "google.com" ><%= event[:title] %></a>
+        <a href = "/events/<% @events[:id] %>" ><%= event[:title] %></a>
     </p>
 <% end %>
